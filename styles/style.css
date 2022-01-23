@@ -74,6 +74,9 @@ body {
   main .banner__contact_form form div input {
     max-width: 250px;
   }
+  main div.about__us .block {
+    justify-content: center;
+  }
 }
 @media (max-width: 1024px) {
   header {
@@ -104,8 +107,12 @@ body {
     display: flex;
   }
   .basic header {
-    max-width: min-content;
+    width: 85px;
     height: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background: var(--background-white-color);
   }
   .basic header .clearfix {
     display: flex;
@@ -120,6 +127,7 @@ body {
   }
   .basic main {
     width: 100%;
+    margin-left: 85px;
   }
   .basic main .banner {
     padding-top: 85px;
@@ -174,7 +182,10 @@ body {
     max-width: 400px;
   }
 
-  .basic main .about__us_text button {
+  main div.about__us .about__us_text {
+    text-align: center;
+  }
+  main div.about__us .about__us_text button {
     width: 100%;
   }
 }
@@ -206,11 +217,11 @@ body {
     padding-left: 60px;
     font-size: 10px;
   }
-  .basic main .about__us .conteiner .row .block_text {
-    padding-top: 40px;
+  .basic main div.about__us .about__us_text {
+    padding: 70px 5px 0 5px;
   }
-  .basic main .about__us .conteiner .row .block_text p {
-    line-height: 15px;
+  .basic main div.about__us .about__us_text p {
+    line-height: 18px;
   }
 }
 header div.logo {
@@ -376,29 +387,29 @@ main .banner div.laptop .container__img .layer__img {
   color: var(--text-color);
 }
 
-.basic main .about__us {
+main .about__us {
   max-width: 1700px;
   height: 623px;
   margin: 0 auto;
   background: url(./../images/layer27.png) left no-repeat, url(./../images/Rectangle5.png) right repeat;
 }
-.basic main .about__us .container .block {
+main .about__us .block {
   justify-content: end;
 }
-.basic main .about__us .container .block .about__us_text {
+main .about__us .block .about__us_text {
   max-width: 502px;
   color: var(--text-white-color);
-  padding: 160px 5px 0 5px;
+  padding: 160px 10px 0 10px;
 }
-.basic main .about__us .container .block .about__us_text h2 {
+main .about__us .block .about__us_text h2 {
   font-size: 26px;
 }
-.basic main .about__us .container .block .about__us_text p {
-  font-size: 11px;
+main .about__us .block .about__us_text p {
+  font-size: 12px;
   padding: 35px 0;
   line-height: 23px;
 }
-.basic main .about__us .container .block .about__us_text button {
+main .about__us .block .about__us_text button {
   color: var(--text-white-color);
   border-radius: 3px;
   border-color: #e7ad48;

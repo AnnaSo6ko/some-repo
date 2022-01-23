@@ -1,37 +1,33 @@
-.basic {
-    main {
-        .about__us {
-            max-width: 1700px;
-            height: 623px;
-            margin: 0 auto;
-            background: url(./../images/layer27.png) left no-repeat,
-                        url(./../images/Rectangle5.png) right repeat;
-            .container {
-                .block {
-                    justify-content: end;
-                    .about__us_text {
-
-                        max-width: 502px;
-                        color: var(--text-white-color);
-                        padding: 160px 5px 0 5px;
-                        h2 {
-                            font-size: $font-size-xl;
-                        }
-                        p {
-                            font-size: $font-size-xxs;
-                            padding: 35px 0;
-                            line-height: 23px;
-                        }
-                        button {
-                            color: var(--text-white-color);  
-                            border-radius: 3px;
-                            border-color: #e7ad48;
-                            border-style: solid;
-                            background: var(--backgroung-orange);
-                            width: 144px;
-                            height: 45px;
-                        }
+main {
+    .about__us {
+        max-width: 1700px;
+        height: 623px;
+        margin: 0 auto;
+        background: url(./../images/layer27.png) left no-repeat,
+                    url(./../images/Rectangle5.png) right repeat;
+            .block {
+                justify-content: end;
+                .about__us_text {
+                    max-width: 502px;
+                    color: var(--text-white-color);
+                    padding: 160px 10px 0 10px;
+                    h2 {
+                        font-size: $font-size-xl;
                     }
+                    p {
+                        font-size: $font-size-xs;
+                        padding: 35px 0;
+                        line-height: 23px;
+                    }
+                    button {
+                        color: var(--text-white-color);  
+                        border-radius: 3px;
+                        border-color: #e7ad48;
+                        border-style: solid;
+                        background: var(--backgroung-orange);
+                        width: 144px;
+                        height: 45px;                        
+                    
                 }
             }
         }

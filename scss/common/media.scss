@@ -17,6 +17,11 @@
                 }
             }
         } 
+        div.about__us {
+            .block {
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -60,8 +65,12 @@
     .basic {
         display: flex;
         header {
-            max-width: min-content;
+            width: 85px;
             height: 100%;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            background: var(--background-white-color);
             .clearfix {
                 display: flex;
                 flex-direction: column;
@@ -78,6 +87,7 @@
         }
         main {
             width: 100%;
+            margin-left: 85px;
             .banner {
                 padding-top: 85px;
                 &__contact {
@@ -142,13 +152,12 @@
     .container {
         max-width: $breakpoint_xs;
     }
-    .basic {
-        main {
-            .about__us{
-                &_text {
-                    button {
-                        width: 100%;
-                    }
+    main {
+        div.about__us {
+            .about__us_text {
+                text-align: center;
+                button {
+                    width: 100%;
                 }
             }
         }
@@ -195,15 +204,11 @@
                     }
                 }               
             } 
-            .about__us {
-                .conteiner {
-                    .row .block {
-                        &_text {
-                            padding-top: 40px;
-                            p {
-                                line-height: 15px;
-                            }
-                        }
+            div.about__us {
+                .about__us_text {
+                    padding: 70px 5px 0 5px;
+                    p {
+                        line-height: 18px;
                     }
                 }
             }
