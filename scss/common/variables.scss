@@ -1,0 +1,27 @@
+$content-width: 1170px;
+$main-font: 'Open Sans', sans-serif;
+
+$font-size-xxs: 11px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 22px;
+$font-size-xl: 26px;
+$font-size-xxl: 36px;
+
+
+:root {
+    --text-color: #8c8c8c;
+    --backgroung-orange: #ffc155;
+    --text-white-color: white;
+    --background-blue: #709dca;
+    --background-white-color: white;
+    --text-color-grey: #394b50;
+}
+
+
+$breakpoint_xxl: 1250px;
+$breakpoint_xl: 1024px;
+$breakpoint_md: 780px;
+$breakpoint_sm: 450px;
+$breakpoint_xs: 400px;
+$breakpoint_xxs: 200px;

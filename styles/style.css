@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+ul, menu {
+  padding: 0;
+}
+
+body,
+h1, h2, h3, h4,
+p,
+ul, ol, li,
+figure,
+figcaption,
+blockquote,
+dl, dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #8c8c8c;
+  --backgroung-orange: #ffc155;
+  --text-white-color: white;
+  --background-blue: #709dca;
+  --background-white-color: white;
+  --text-color-grey: #394b50;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  main .banner__contact {
+    max-width: 1024px;
+  }
+  main .banner__contact_form form div input {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 5px;
+  }
+  header .container {
+    max-width: 780px;
+  }
+  header .container menu {
+    max-width: 650px;
+  }
+  header .container menu li {
+    padding: 12px;
+  }
+
+  main .banner__contact {
+    max-width: 780px;
+  }
+  main .banner__contact p {
+    font-size: small;
+  }
+  main .banner__contact_form form div input {
+    max-width: 190px;
+  }
+}
+@media (max-width: 780px) {
+  .basic {
+    display: flex;
+  }
+  .basic header {
+    max-width: min-content;
+    height: 100%;
+  }
+  .basic header .clearfix {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: fit-content;
+    margin: 0;
+  }
+  .basic header .clearfix menu ul {
+    flex-direction: column;
+    max-width: min-content;
+  }
+  .basic main {
+    width: 100%;
+  }
+  .basic main .banner {
+    padding-top: 85px;
+  }
+  .basic main .banner__contact {
+    max-width: 450px;
+  }
+  .basic main .banner__contact h1 {
+    font-size: 26px;
+  }
+  .basic main .banner__contact_form form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .basic main .banner__contact_form form div {
+    margin: 5px;
+    width: 100%;
+  }
+  .basic main .banner__contact_form form div input {
+    max-width: 100%;
+  }
+  .basic main .banner div.laptop .container {
+    max-width: 300px;
+  }
+  .basic main .banner div.laptop .container__img .laptop__img {
+    margin-bottom: -30px;
+  }
+  .basic main .banner div.laptop .container__img .layer__img {
+    max-width: 192px;
+    top: 73px;
+    left: 55px;
+  }
+  .basic main div.services {
+    padding-top: 100px;
+  }
+  .basic main div.services__squares .row {
+    flex-direction: column;
+  }
+  .basic main div.services__squares .row .services__squares_item {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .basic main div.services__squares .row .services__squares_item_img {
+    height: 120px;
+  }
+  .basic main div.services__squares .row .services__squares_item_text {
+    padding-right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .basic main .about__us_text button {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .basic .container {
+    max-width: 200px;
+  }
+  .basic main .banner .banner__contact {
+    max-width: 200px;
+  }
+  .basic main .banner .banner__contact .form button {
+    max-width: 190px;
+  }
+  .basic main .banner div.laptop .container {
+    max-width: 200px;
+  }
+  .basic main .banner div.laptop .container .layer__img {
+    max-width: 124px;
+    top: 71px;
+    left: 38px;
+  }
+  .basic main .services__squares {
+    flex-direction: column;
+  }
+  .basic main .services__squares .services__squares_item_img {
+    width: 50px;
+  }
+  .basic main .services__squares .services__squares_item_text {
+    padding-left: 60px;
+    font-size: 10px;
+  }
+  .basic main .about__us .conteiner .row .block_text {
+    padding-top: 40px;
+  }
+  .basic main .about__us .conteiner .row .block_text p {
+    line-height: 15px;
+  }
+}
+header div.logo {
+  float: left;
+}
+header img {
+  width: 50px;
+  height: 48px;
+  margin: 10px auto;
+}
+header menu {
+  float: right;
+}
+header menu ul {
+  display: flex;
+}
+header menu li {
+  padding: 12px 20px;
+  font-size: 11px;
+}
+header menu li.active {
+  background-color: var(--backgroung-orange);
+  border-radius: 3px;
+}
+header menu a {
+  color: var(--text-color);
+}
+header menu a.active {
+  color: var(--text-white-color);
+}
+
+main .banner {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-top: 110px;
+  background-color: var(--background-blue);
+}
+main .banner__contact {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 5px;
+}
+main .banner__contact h1 {
+  font-size: 36px;
+  color: var(--text-white-color);
+}
+main .banner__contact p {
+  color: var(--text-white-color);
+  font-weight: 300;
+}
+main .banner__contact_form {
+  padding-top: 30px;
+}
+main .banner__contact_form form {
+  display: flex;
+  justify-content: center;
+}
+main .banner__contact_form form div {
+  margin: 0 5px;
+  width: 280px;
+  height: 45px;
+}
+main .banner__contact_form form div input {
+  width: 280px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+main .banner__contact_form form div .form__input {
+  background-color: var(--background-white-color);
+  box-sizing: border-box;
+}
+main .banner__contact_form form div .name__input {
+  background-image: url(./../images/cont.jpg);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+main .banner__contact_form form div .email__input {
+  background-image: url(./../images/lllk.jpg);
+  background-position: left;
+  background-size: 28px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+main .banner__contact_form form div .tel__input {
+  background-image: url(./../images/tel.jpg);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+main .banner__contact_form form button {
+  width: 280px;
+  height: 45px;
+  color: var(--text-white-color);
+  background: var(--backgroung-orange);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+main .banner div.laptop {
+  display: flex;
+}
+main .banner div.laptop .container__img {
+  position: relative;
+}
+main .banner div.laptop .container__img .laptop__img {
+  margin-top: 65px;
+  margin-bottom: -65px;
+  padding: 0 10px;
+  z-index: 1;
+}
+main .banner div.laptop .container__img .layer__img {
+  z-index: 2;
+  top: 83px;
+  left: 114px;
+  position: absolute;
+}
+
+.basic main .services {
+  padding-top: 200px;
+  padding-bottom: 75px;
+}
+.basic main .services__text {
+  margin: 0 auto;
+  text-align: center;
+}
+.basic main .services__text h2 {
+  font-size: 22px;
+  color: var(--text-color-grey);
+}
+.basic main .services__text span {
+  font-size: 11px;
+  color: var(--text-color-grey);
+}
+.basic main .services__squares {
+  padding-top: 35px;
+  margin: 5px;
+}
+.basic main .services__squares_item {
+  width: 50%;
+  padding: 40px 10px;
+}
+.basic main .services__squares_item_img {
+  float: left;
+  height: 100px;
+  width: 85px;
+}
+.basic main .services__squares_item_text {
+  padding-right: 60px;
+}
+.basic main .services__squares_item_text h4 {
+  font-size: 14px;
+  color: var(--text-color-grey);
+}
+.basic main .services__squares_item_text p {
+  padding-top: 20px;
+  font-size: 11px;
+  color: var(--text-color);
+}
+
+.basic main .about__us {
+  max-width: 1700px;
+  height: 623px;
+  margin: 0 auto;
+  background: url(./../images/layer27.png) left no-repeat, url(./../images/Rectangle5.png) right repeat;
+}
+.basic main .about__us .container .block {
+  justify-content: end;
+}
+.basic main .about__us .container .block .about__us_text {
+  max-width: 502px;
+  color: var(--text-white-color);
+  padding: 160px 5px 0 5px;
+}
+.basic main .about__us .container .block .about__us_text h2 {
+  font-size: 26px;
+}
+.basic main .about__us .container .block .about__us_text p {
+  font-size: 11px;
+  padding: 35px 0;
+  line-height: 23px;
+}
+.basic main .about__us .container .block .about__us_text button {
+  color: var(--text-white-color);
+  border-radius: 3px;
+  border-color: #e7ad48;
+  border-style: solid;
+  background: var(--backgroung-orange);
+  width: 144px;
+  height: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */

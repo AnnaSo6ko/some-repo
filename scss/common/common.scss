@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+  }
+    
+  .container {
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+    
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }

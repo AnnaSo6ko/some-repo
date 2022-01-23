@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
+}
+ul, menu {
+  padding: 0;
+}
+body,
+h1,h2,h3,h4,
+p,
+ul,ol,li,
+figure,
+figcaption,
+blockquote,
+dl,dd {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+  text-decoration: none;
+}
