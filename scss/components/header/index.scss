@@ -6,12 +6,10 @@ header {
         width: 50px;
         height: 48px;
         margin: 10px auto;
-    }
+    } 
     menu {
         float: right;
-        ul {
-            display: flex;
-        }
+         display: flex;
         li {
             padding: 12px 20px;
             font-size: $font-size-xxs;
@@ -22,7 +20,7 @@ header {
         }
         a {
             color: var(--text-color);
-        }
+        } 
         a.active {
             color: var(--text-white-color);
         }
